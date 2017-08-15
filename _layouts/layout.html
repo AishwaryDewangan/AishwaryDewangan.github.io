@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    {% if page.title %}{{ page.title }} &ndash;{% endif %} {{ site.name }}
+  </title>
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="/css/mobile.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/f778bf380c.css">
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.ga }}']);
+    _gaq.push(['_setDomainName', 'aishwr.com']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div class="top-line"></div>
+  <div class="container">
+    <header class="sidebar">
+      <a href="/" title="Photo of my face" aria-label="Photo of my face">
+        <img src="/images/avatar.jpg" height="150" width="150" class="avatar" />
+      </a>
+
+      <div class="sidebar-text">
+        <nav class="sections">
+          <ul>
+            <li><a href="/">blog</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="https://github.com/{{ site.github }}" target="_blank">github</a></li>
+            <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank">twitter</a></li>
+            <li><a href="/atom.xml">rss</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    {{ content }}
+
+    <section class="content">
+      <div class="footer">
+        <section class="thanks">
+          <span>thanks for reading!</span>
+        </section>
+      </div>
+</section>
+
+  </div>
+</body>
+</html>
