@@ -31,32 +31,16 @@
   </script>
 </head>
 <body>
-  <div class="top-line"></div>
+  <div class="top-line">
+  </div>
   <div class="container">
-    <header class="sidebar">
-      <a href="/" title="Photo of my face" aria-label="Photo of my face">
-        <img src="/images/avatar.jpg" height="150" width="150" class="avatar" />
-      </a>
-
-      <div class="sidebar-text">
-        <nav class="sections">
-          <ul>
-            <li><a href="/">blog</a></li>
-            <li><a href="/about">about</a></li>
-            <li><a href="https://github.com/{{ site.github }}" target="_blank">github</a></li>
-            <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank">twitter</a></li>
-            <li><a href="/atom.xml">rss</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
     {{ content }}
 
     <section class="content">
       <div class="footer">
         <section class="thanks">
-          <span>thanks for reading!</span>
+          <span><a href="/about">about</a> | <a href="https://github.com/{{ site.github }}" target="_blank">github</a> | <a href="https://twitter.com/{{ site.twitter }}" target="_blank">twitter</a></span>
         </section>
       </div>
 </section>

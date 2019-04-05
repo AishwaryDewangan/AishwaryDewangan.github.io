@@ -1,3 +1,3 @@
-# aishwr.com
+# aishwary.dev
 
 Thoughts | Ideas | Stories
