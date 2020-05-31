@@ -1,6 +1,6 @@
 # Table of contents
 
-* [aishwary.dev](README.md)
+* [About](README.md)
 * [Blog](blog/README.md)
   * [Back to Stock Android](blog/2017-09-08-back-to-stock-android.md)
   * [Installing Lineage OS](blog/2017-08-15-installing-lineage-os.md)

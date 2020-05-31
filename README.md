@@ -1,4 +1,4 @@
-# aishwary.dev
+# About
 
 Thoughts \| Ideas \| Stories
 
