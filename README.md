@@ -1,3 +1,4 @@
 # aishwary.dev
 
-Thoughts | Ideas | Stories
+Thoughts \| Ideas \| Stories
+
