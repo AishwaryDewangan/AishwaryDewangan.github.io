@@ -1,7 +1,7 @@
 permalink: /blog/:title/
-name: Aishwary Dewangan
+name: aishwary
 url: https://aishwary.dev
-description: Thoughts | Ideas | Stories
+description: thoughts | ideas | stories
+future: true
 twitter: aishwarydew
-github: aishwarydewangan
-ga: UA-103961064-1
+google_analytics_tracking_id: UA-103961064-1

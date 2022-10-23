@@ -14,7 +14,6 @@ I did following commands to stop .DS_Store from  joining the git party:
 
 {% highlight bash %}
 $ git config --global core.excludesfile ~/.gitignore
-
 $ echo .DS_Store >> ~/.gitignore
 {% endhighlight %}
 

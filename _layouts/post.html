@@ -1,15 +1,54 @@
 ---
-layout: layout
+layout: body
 ---
-<!-- <link rel="stylesheet" href="/css/scroller.css" type="text/css" media="screen, projection"/> -->
+<nav>
+  <ul>
+    <li id="home_link" class="og"><a href="/">🏠</a></li>
+    <li><a href="/">home</a></li>
+    <li><a href="/about">about</a></li>
+  </ul>
+</nav>
+
+<div class="splash short">
+  <div class="splash-wrapper">
+    <div>
+      <section class="byline">
+        {{ page.date | date: "%B %e, %Y" }}
+      </section>
+
+      <div>
+        <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+        {% if page.subtitle %}
+        <div class="subtitle">{{ page.subtitle }}</div>
+        {% endif %}
+      </div>
+
+      {% if page.img %}
+        <img style="width:100%;padding-top:var(--spacing-l);" alt="post header image" src={{page.img}}>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 <section class="content">
-  <h1>
-    <a href="{{ page.url }}">{{ page.title }}</a>
-  </h1>
-
-  <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }}
-  </section>
-
   {{ content }}
+
+  <div class="prev-next">
+    {% if page.previous.url %}
+      <a href="{{page.previous.url}}">&laquo; Previous</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a href="{{page.next.url}}">Next &raquo;</a>
+    {% endif %}
+  </div>
 </section>
+
+<div class="footer">
+  <div class="thanks">
+    <span>Thanks for reading! <span class="og" style="color: var(--red)">❤︎</span></span>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="aishwarydew" title="Tweet at me!"
+      aria-label="Tweet at me!">Tweet</a>
+  </div>
+</div>
+
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>

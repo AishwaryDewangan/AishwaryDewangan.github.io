@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background: linear-gradient(to right top, #408fef 50%, #408fef 50%);
+  background: linear-gradient(to right top, #ff487a 50%, #7ccdea 50%);
   background-size: 100% calc(100% - 100vh + 8px);
   background-repeat: no-repeat;
 }

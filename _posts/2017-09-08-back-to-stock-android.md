@@ -13,7 +13,5 @@ Apart from these glitches, Lineage worked well. And yes every platform has its s
 
 I went over to XDA and found an amazing article over [here](https://forum.xda-developers.com/moto-g4-plus/how-to/stock-rom-npjs25-93-14-4-march-1-t3608138). I followed those steps and was back to stock within few minutes.
 
-{% include warning.html content="I didn't flash gpt.bin and bootloader.img as it can mess up with device's cellular system. So proceed with caution, do not attempt any step unless you are 100% sure. As always, I am not responsible for your bricked device." %}
-
 ## Final notes
 Lineage OS is good but IMHO they need to find solution soon to make way into user's phone for everyday use. Meanwhile, I will wait for Android Oreo :)

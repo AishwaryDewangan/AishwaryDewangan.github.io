@@ -1,50 +1,26 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-  <meta charset="utf-8">
-  <title>
-    {% if page.title %}{{ page.title }} &ndash;{% endif %} {{ site.name }}
-  </title>
+---
+layout: body
+---
+<nav>
+  <ul>
+    <li id="home_link" class="og"><a href="/">🏠</a></li>
+    <li><a href="/">home</a></li>
+    <li><a href="/about">about</a></li>
+  </ul>
+</nav>
 
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="description" content="{{ site.description }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
-
-  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="/css/mobile.css" type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/f778bf380c.css">
-
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '{{ site.ga }}']);
-    _gaq.push(['_setDomainName', 'aishwr.com']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</head>
-<body>
-  <div class="top-line">
+{% if page.splashtitle %}
+<div class="splash">
+  <div class="splash-wrapper">
+    <div class="splash-copy">
+      <h1>{{page.splashtitle}}</h1>
+      <!-- <p>{{page.splashbyline}}</p> -->
+    </div>
   </div>
-  <div class="container">
+  <div class="dots"></div>
+</div>
+{% endif %}
 
-    {{ content }}
-
-    <section class="content">
-      <div class="footer">
-        <section class="thanks">
-          <span><a href="/">home</a> | <a href="/about">about</a> | <a href="https://github.com/{{ site.github }}" target="_blank">github</a> | <a href="https://twitter.com/{{ site.twitter }}" target="_blank">twitter</a></span>
-        </section>
-      </div>
+<section class="content">
+  {{ content }}
 </section>
-
-  </div>
-</body>
-</html>

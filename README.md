@@ -1,4 +1,0 @@
-# About
-
-Thoughts \| Ideas \| Stories
-
